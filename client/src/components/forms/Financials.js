@@ -32,11 +32,16 @@ class FinancialsForm extends Component{
 
                 <form onSubmit={this.props.handleSubmit(this.props.onFinancialsSubmit)}>
                     <div className="container">
-                        <div className="row">
-                            <div className="col s12 m12">
-                                {this.renderFields()}
-                                <Link to="/home" className="red btn-flat white-text">Cancel</Link>
-                                <button type="submit" className="teal btn-flat right white-text">Next <i className="material-icons right">done</i> </button>
+                        <div className="form-main">
+                            <div className="row">
+                                <div className="col s12 m12">
+                                    <div className="form-wrap financial-form">
+                                        <h1 className="form-header">Financial Form</h1>
+                                        {this.renderFields()}
+                                        <Link to="/home" className="red btn-flat white-text animate">Cancel</Link>
+                                        <button type="submit" className="teal btn-flat right white-text animate">Next <i className="material-icons right">done</i> </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
