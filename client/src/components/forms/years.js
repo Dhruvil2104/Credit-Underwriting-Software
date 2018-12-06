@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Field} from 'redux-form';
+import onlyAlphs from "./onlyAlphs";
+import onlyNums from "./onlyNums";
 
 export default({fields, meta, label})=>(
     <ul>
@@ -24,7 +26,7 @@ export default({fields, meta, label})=>(
                             component = {renderYears}
                             label = {index+1}
                             fieldName = {label}
-
+                            normalize={onlyNums}
                         />
                     </td>
                     ))}

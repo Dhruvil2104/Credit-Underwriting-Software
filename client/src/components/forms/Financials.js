@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 import years from "./years";
 import findSum from "./findSum";
 import onlyAlphs from "./onlyAlphs"
+import onlyNums from "./onlyNums"
 
 class FinancialsForm extends Component{
     //const onlyNums = value.replace(/[^\d]/g, '')
@@ -17,7 +18,7 @@ class FinancialsForm extends Component{
         return(
             <div>
                 <Field type="text" name="BuyerName" label="Buyer's name" component={FinancialsField} normalize={onlyAlphs}/>
-                <Field type="text" name="StatementQuality" label="Statement Quality" component={FinancialsField}/>
+                <Field type="text" name="StatementQuality" label="Statement Quality" component={FinancialsField} normalize={onlyAlphs}/>
                 <FieldArray name="Cash" label="Cash" component={years}/>
                 <FieldArray name="AccountsReceivable" label="Accounts Receivable" component={years}/>
                 <FieldArray name="Inventory" label="Inventory" component={years}/>
