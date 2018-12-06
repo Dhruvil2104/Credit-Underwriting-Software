@@ -1,11 +1,33 @@
-//nav {
-//  background-color: #e8ecf8;
-//}
+nav {
+  margin-bottom: 20px;
+}
+nav .nav-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
 
 .nav-wrapper image {
   display: inline-block;
   height: 100%;
   width: 50px;
+}
+
+.nav-wrapper .logo-wrapper {
+  display: inline-block;
+  max-height: 100%;
+  padding: 0 10px;
+}
+
+.nav-wrapper .logo-wrapper img {
+  margin-top: 6px;
+}
+
+nav .brand-logo {
+  position: relative;
+}
+
+.title-wrapper {
+  display: inline-block;
 }
 
 .form-element {
@@ -45,11 +67,15 @@ footer .row {
 .left.brand-logo {
   color: initial;
 }
-
-.home-btn {
+.home-btn{
   margin: 200px 0;
 }
-
-.button-wrap {
+.button-wrap{
   text-align: center;
+}
+.card-panel.teal.lighten-4 li {
+  color: #333;
+}
+.info-page-wrap {
+  margin: 140px 0;
 }
