@@ -1,4 +1,6 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #e8ecf8;
 }
@@ -9,27 +11,22 @@ nav .nav-wrapper {
   width: 70%;
   margin: 0 auto;
 }
-
 .nav-wrapper image {
   display: inline-block;
   height: 100%;
   width: 50px;
 }
-
 .nav-wrapper .logo-wrapper {
   display: inline-block;
   max-height: 100%;
   padding: 0 10px;
 }
-
 .nav-wrapper .logo-wrapper img {
   margin-top: 6px;
 }
-
 nav .brand-logo {
   position: relative;
 }
-
 .title-wrapper {
   display: inline-block;
 }
@@ -63,18 +60,13 @@ form .container {
 input.form-field {
   height: 2.2rem;
 }
-//Container
-//.container {
-//  background-color: #bdbdbd;
-//}
-//footer
 footer {
   background-color: #0d4d02cf;
   margin-top: 20px;
   color: #ffffff;
 }
 footer .social-sites a {
-  float: right;
+  float: right; //pull the element to the right of the screen forcefully
   display: inline-block;
 }
 .footer-main {
@@ -85,9 +77,6 @@ footer .social-sites a {
 footer .row {
   margin: 0;
 }
-.left.brand-logo {
-  //color: initial;
-}
 .home-btn{
   margin: 200px 0;
 }
@@ -95,7 +84,7 @@ footer .row {
   text-align: center;
 }
 .card-panel.teal.lighten-4 li {
-  color: #333;
+  color: #333333;
 }
 .info-page-wrap {
   margin: 140px 0;
@@ -104,12 +93,10 @@ footer .row {
 //button CSS
 .animate {
   background-color: #ffffff !important;
-  //color: $button-color !important;
   box-shadow: none;
   position: relative;
-  //border: 2px solid $button-color;
   z-index: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; //css3 effect for animation
   overflow: hidden;
 }
 .animate::before {
@@ -120,17 +107,15 @@ footer .row {
   right: 50%;
   z-index: -1;
   transition: 0.3s ease-in-out;
-  transform: translate(50%,-50%) rotate(45deg);
+  transform: translate(50%,-50%) rotate(45deg); //bringing the element center of the screen both veritcally and horizontally and rotaating it 45 degree
   top: 50%;
 }
 .animate:hover {
-  color: #ffffff !important;
+  color: #ffffff !important; // !important gives highest priority and can be overridden with !important only
 }
 .animate:hover::before {
   height: 400%;
-  //background-color: $button-color;
 }
-
 //Teal Color Button
 .animate.teal {
   color: #009688 !important;
@@ -152,4 +137,4 @@ footer .row {
 }
 .animate.red:hover {
   color: #ffffff !important;
-}
+} 
